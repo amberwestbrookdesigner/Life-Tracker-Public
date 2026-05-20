@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparkle Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&family=Meow+Script&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/app-dog.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Sparkle Tracker">
+    <meta name="theme-color" content="#f2eaea">
+</head>
+<body>
+
+  <div class="app">
+    <header class="app-header">
+      <div class="header-bow header-bow-left"><img src="images/bow.png" alt=""></div>
+      <div class="header-bow header-bow-right"><img src="images/bow.png" alt=""></div>
+      <div class="header-inner">
+        <span class="header-sparkles">✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦</span>
+        <h1>Sparkle Tracker</h1>
+        <p class="subtitle">your personal daily record</p>
+        <div class="header-deco">✦ &nbsp; est. 2026 &nbsp; ✦</div>
+      </div>
+    </header>
+
+<div class="whimsy-strip">
+  <svg viewBox="0 0 1100 40" xmlns="http://www.w3.org/2000/svg" class="whimsy-svg">
+    <text x="20" y="28" font-size="16" fill="#bd6982" opacity="0.6">✦</text>
+    <text x="80" y="22" font-size="10" fill="#c8d5e0" opacity="0.8">✧</text>
+    <text x="140" y="30" font-size="14" fill="#d6d6ee" opacity="0.7">❀</text>
+    <text x="200" y="20" font-size="10" fill="#bd6982" opacity="0.5">✦</text>
+    <text x="260" y="28" font-size="16" fill="#efd8e2" opacity="0.8">✿</text>
+    <text x="320" y="22" font-size="10" fill="#665257" opacity="0.4">✧</text>
+    <text x="380" y="30" font-size="14" fill="#bd6982" opacity="0.6">❋</text>
+    <text x="440" y="20" font-size="10" fill="#c8d5e0" opacity="0.7">✦</text>
+    <text x="500" y="28" font-size="16" fill="#d6d6ee" opacity="0.6">✿</text>
+    <text x="560" y="22" font-size="10" fill="#bd6982" opacity="0.5">✧</text>
+    <text x="620" y="30" font-size="14" fill="#efd8e2" opacity="0.8">✦</text>
+    <text x="680" y="20" font-size="10" fill="#665257" opacity="0.4">❀</text>
+    <text x="740" y="28" font-size="16" fill="#bd6982" opacity="0.6">✿</text>
+    <text x="800" y="22" font-size="10" fill="#c8d5e0" opacity="0.7">✦</text>
+    <text x="860" y="30" font-size="14" fill="#d6d6ee" opacity="0.6">❋</text>
+    <text x="920" y="20" font-size="10" fill="#bd6982" opacity="0.5">✧</text>
+    <text x="980" y="28" font-size="16" fill="#efd8e2" opacity="0.8">✦</text>
+    <text x="1040" y="22" font-size="10" fill="#665257" opacity="0.4">✿</text>
+  </svg>
+</div>
+
+    <nav class="app-nav">
+        <button class="nav-btn active" data-view="calendar">✦ Calendar</button>
+        <button class="nav-btn" data-view="summary">✦ Summary</button>
+        <button class="nav-btn" data-view="horoscope">✦ Horoscope</button>
+        <button class="nav-btn" data-view="tarot">✦ Tarot</button>
+    </nav>
+
+    <main class="app-main" id="app-main"></main>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
